@@ -89,12 +89,12 @@ body {
 }
 @media (min-width: 1400px) {
 	.top-container {
-		padding-bottom: 28vh;
+		padding-bottom: 32vh;
 	}
 }
 @media (min-width: 2000px) {
 	.top-container {
-		padding-bottom: 32vh;
+		padding-bottom: 36vh;
 	}
 }
 
@@ -156,7 +156,7 @@ body {
 	margin: auto;
 	
 	border-radius: 10px;
-	border: 5px solid #926229;
+	border: 5px solid #F5FFFA;
 	
 	background-image: url("../assets/work.jpg");
 	background-repeat: no-repeat;
@@ -185,7 +185,7 @@ body {
 }
 .content-box {
 	
-	border: 2px solid white;
+	
 }
 .content-box.intro {
 	margin-top: 24vh;
@@ -237,6 +237,7 @@ body {
 
 	font-size: 4.5em;
 	font-family: "ostrich";
+	color:rgb(0, 20, 51);
 }
 
 @keyframes dropLetters {
@@ -294,14 +295,17 @@ body {
 	position: relative;
 	z-index: 7;
 	margin-top: -40vh;
-	padding-bottom: 20vh;
+	/*padding-bottom: 20vh;*/
 	/*top: -20%;*/
 
 	background-color: #f4cc70;
-	
-	border: 2px solid white;
-	
 }
+@media (max-width: 699px) {
+	.experience{
+		padding-bottom: 20vh;
+	}
+}
+
 
 .projects {
 	margin-top: -40vh;
@@ -312,7 +316,7 @@ body {
 
 	background-color: #c4dfe6;
 	
-	border: 2px solid white;
+	
 }
 
 .top-container.contact {
@@ -336,10 +340,11 @@ body {
 
 .exp-box {
 	margin-top: 5vh;
-	border: 2px solid blue;
+	
 }
 
 .position-title {
+	color: #191970;
 	font-size: 1.2em;
 	text-align: center;
 }
@@ -358,11 +363,10 @@ body {
 	width: 90%;
 	height: 80vh;
 	
-	border: 2px solid black;
+	box-shadow: 0px 5px 5px rgba(0,0,0,0.5);
 	
 	display: flex;
 	flex-direction: column;
-	
 	
 }
 @media (min-width: 1000px) {
@@ -374,7 +378,6 @@ body {
 	
 	width: 100%;
 	
-	border: 2px solid red;
 	
 	flex-grow: 1;
 	
@@ -382,6 +385,9 @@ body {
 	
 	background-size: cover;
 	background-position: center;
+	
+	border-radius: 5px;
+	
 }
 .project-tab.grow {
 	
@@ -481,7 +487,6 @@ body {
 	width: 100%;
 	
 	text-align: center;
-	border: 2px solid red;
 }
 .contact-link {
 	
@@ -495,7 +500,6 @@ body {
 
 .parting-container {
 	margin-top: 1vh;
-	border: 2px solid red;
 	transform:skew(0deg,-10deg);
 	-ms-transform:skew(0deg,-20deg);
 	-webkit-transform:skew(0deg,-10deg);
