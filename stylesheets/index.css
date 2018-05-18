@@ -226,6 +226,40 @@ body {
 	flex-direction: row;
 }
 
+.typed-greeting {
+	
+}
+.introduction-pause {
+	display: inline;
+
+}
+.changing-greeting {
+	display: inline;
+
+}
+
+@keyframes blink {
+	0% {
+		border: 2px solid rgba(0, 20, 51, 0.0);
+	}
+	50% {
+		border: 2px solid rgba(0, 20, 51, 0.9);
+	}
+	100% {
+		border: 2px solid rgba(0, 20, 51, 0.0);
+	}
+}
+.blinking-box {
+	display: inline;
+	font-size: 0.9em;
+	height: 0.9em;
+	width: 0.1em;
+	border: 2px solid black;
+}
+.blinking-box.blinking {
+	animation: blink 0.8s infinite step-end;
+}
+
 .titledrop-container {
 	height: 6vh;
 	width: 100%;
