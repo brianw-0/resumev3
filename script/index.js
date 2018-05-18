@@ -134,7 +134,6 @@ When all letters are removed, the next function, change_phrase, is called using 
 This changes the phrase to the next one, or circles round and comes back to the first phrase.
 Then add_letters is called again using a setInterval, and we have a loop.
 */	
-	
 var greeting_phrases = ["hope you enjoy your visit.","make websites for fun.", "like watching Game of Thrones.", "want to take up surfing.",
  "can play piano kinda well."];
 var phrase_index = 0;  //Current index in the phrase list
@@ -142,7 +141,11 @@ var current_phrase = greeting_phrases[phrase_index]; //Current phrase in the ind
 var letter_index = 0; //Current index of a letter in the current phrase
 var new_greeting = "";
 var remove_phrase;  //setInterval variable for removing letters
-var add_phrase = setInterval(add_letters, 80);
+var add_phrase;
+function blinkManager() {
+	add_phrase = setInterval(add_letters, 80);
+}
+
 
 function add_letters() {
 	if(letter_index >= current_phrase.length) { //If the last letter is in place, end the setInterval
@@ -196,5 +199,6 @@ $(document).ready(function(){
 	
 	projectAccordionListener();
 
+	blinkManager();
 });
 
