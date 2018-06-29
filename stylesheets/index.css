@@ -34,33 +34,42 @@
 }
 
 body {
-	overflow-x: hidden;
-	max-width: 100%;
-	
 	background-color: #1e434c;
 	
+	max-width: 100%;
+	overflow-x: hidden;
+	
+	
+}
+.overlord-wrapper {
+	max-width: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	
 	font-size: 30px;
+	padding-bottom: 10em;
 }
 @media screen and (max-width: 699px) {
-	body {
+	.overlord-wrapper {
 		font-size: 10px;
 	}
 }
 @media screen and (min-width: 700px) {
-	body {
+	.overlord-wrapper {
 		font-size: 13px;
 	}
 }
 @media screen and (min-width: 1000px) {
-	body {
+	.overlord-wrapper {
 		font-size: 16px;
 	}
 }
 @media screen and (min-width: 2000px) {
-	body {
+	.overlord-wrapper {
 		font-size: 22px;
 	}
 }
+
 
 
 .top-container {
